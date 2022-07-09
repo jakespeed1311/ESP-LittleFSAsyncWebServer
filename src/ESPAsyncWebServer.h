@@ -34,6 +34,7 @@
 #elif defined(ESP8266)
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
+//#define ESP8255_Filesystem_SPIFFS    //Enable If Use SPIFFS
 #else
 #error Platform not supported
 #endif
@@ -45,6 +46,8 @@
 #endif
 
 #define DEBUGF(...) //Serial.printf(__VA_ARGS__)
+
+
 
 class AsyncWebServer;
 class AsyncWebServerRequest;
